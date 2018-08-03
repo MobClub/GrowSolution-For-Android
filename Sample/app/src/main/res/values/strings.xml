@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GrowSolution Sample</string>
+    <string name="main_grow">GrowSolution</string>
+    <string name="main_tips">这个是demo界面,即开发者的界面, 占击下面按钮进入grow</string>
+</resources>
