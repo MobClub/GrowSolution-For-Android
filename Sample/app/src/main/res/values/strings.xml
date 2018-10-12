@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">GrowSolution Sample</string>
-    <string name="main_grow">GrowSolution</string>
     <string name="main_tips">这个是demo界面,即开发者的界面, 占击下面按钮进入grow</string>
+    <string name="main_grow">GrowSolution(作为二级页面直接跳转)</string>
+    <string name="first_main">GrowSolution(作为一级页面集成接入)</string>
 </resources>

@@ -18,7 +18,7 @@ android {
     }
 }
 
-MobSolution{
+MobSolution {
     appKey "5728768948ac4"
     appSecret "f0a4226990586fe4fec73a4bca440818"
 
