@@ -31,6 +31,8 @@
         <activity android:name=".FirstActivity"
             android:theme="@android:style/Theme.Holo.NoActionBar">
         </activity>
+        <activity android:name=".GrowAdsActivity">
+        </activity>
     </application>
 
 </manifest>

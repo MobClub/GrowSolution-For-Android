@@ -3,4 +3,8 @@
     <string name="main_tips">这个是demo界面,即开发者的界面, 占击下面按钮进入grow</string>
     <string name="main_grow">GrowSolution(作为二级页面直接跳转)</string>
     <string name="first_main">GrowSolution(作为一级页面集成接入)</string>
+    <string name="main_sign_info">获取签到信息：当前签到值= %1$d " 签到天数：%2$d</string>
+    <string name="main_sign">签到成功，获得金币数：%d</string>
+    <string name="main_bind">绑定成功</string>
+    <string name="main_init">初始化成功</string>
 </resources>
