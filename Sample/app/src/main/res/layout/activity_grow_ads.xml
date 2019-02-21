@@ -31,6 +31,7 @@
             android:text="原生(信息流)广告"/>
 
         <LinearLayout
+            android:id="@+id/ll_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"

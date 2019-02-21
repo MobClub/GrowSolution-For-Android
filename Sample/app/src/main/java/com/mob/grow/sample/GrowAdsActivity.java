@@ -60,6 +60,8 @@ public class GrowAdsActivity extends Activity {
 					info_img.execute(response.imageUrl, 0);
 					AsyncImageView logo = (AsyncImageView) findViewById(R.id.logo);
 					logo.execute(response.adLogoUrl, 0);
+//					发送展现报告，在显示时调用（重要！勿漏）
+					response.recordImpression(findViewById(R.id.ll_info));
 				}
 			}
 
@@ -68,6 +70,8 @@ public class GrowAdsActivity extends Activity {
 
 			}
 		});
+
+		infoFlowAd.makeRequest();
 
 		Button inter_btn = (Button) findViewById(R.id.inter_btn);
 
@@ -84,34 +88,35 @@ public class GrowAdsActivity extends Activity {
 				}
 			}
 		});
+		splashAd = new GrowSplashAd(GrowAdsActivity.this, splashfl, new GrowSplashAdListener() {
+			@Override
+			public void onAdPresent() {
+				System.out.println(">>>>>>onAdPresent>>> ");
+			}
 
+			@Override
+			public void onAdDismissed() {
+				splashfl.removeAllViews();
+			}
+
+			@Override
+			public void onAdFailed(String error) {
+				Toast.makeText(GrowAdsActivity.this, "闪屏广告加载失败：请求超时" + error, Toast.LENGTH_SHORT).show();
+				System.out.println(">>>>>>onAdFailed>>> ");
+			}
+
+			@Override
+			public void onAdClick() {
+
+			}
+		}, true);
 
 		Button inter_splash = (Button) findViewById(R.id.inter_splash);
+		inter_splash.setVisibility(View.GONE);
 		inter_splash.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				splashAd = new GrowSplashAd(GrowAdsActivity.this, splashfl, new GrowSplashAdListener() {
-					@Override
-					public void onAdPresent() {
-						System.out.println(">>>>>>onAdPresent>>> ");
-					}
 
-					@Override
-					public void onAdDismissed() {
-						splashfl.removeAllViews();
-					}
-
-					@Override
-					public void onAdFailed(String error) {
-						Toast.makeText(GrowAdsActivity.this, "加载失败：" + error, Toast.LENGTH_SHORT).show();
-						System.out.println(">>>>>>onAdFailed>>> ");
-					}
-
-					@Override
-					public void onAdClick() {
-
-					}
-				}, true);
 			}
 		});
 	}

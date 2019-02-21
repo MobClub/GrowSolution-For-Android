@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/main_tips"/>
+
+    <EditText
+        android:id="@+id/etuid"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:hint="切换用户，请输入uid"/>
+    <Button
+        android:id="@+id/sdk_api"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="#EDF3FF"
+        android:clickable="true"
+        android:text="功能列表"/>
+
+    <Button
+        android:id="@+id/main_growsdk"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="#EDF3FF"
+        android:clickable="true"
+        android:text="@string/main_grow"/>
+
+
+</LinearLayout>
+

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="功能列表"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <Button
+            android:id="@+id/bind"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:text="绑定"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"/>
+
+        <Button
+            android:id="@+id/testview1"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:text="展示图文资讯"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"/>
+
+        <Button
+            android:id="@+id/testview2"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:text="展示视频资讯"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"/>
+
+        <Button
+            android:id="@+id/testview3"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:text="展示个人中心"
+            android:visibility="visible"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"/>
+
+
+        <Button
+            android:id="@+id/main_growsdkads_init"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:text="广告初始化"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"/>
+
+        <Button
+            android:id="@+id/main_growsdkads"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:text="展示广告（先初始化）"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"/>
+
+        <Button
+            android:id="@+id/get_sign"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:text="获取签到信息(先绑定)"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"/>
+
+        <Button
+            android:id="@+id/sign"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:text="签到(先绑定)"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"/>
+
+        <Button
+            android:id="@+id/getInviteCode"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:text="获取邀请码(先绑定)"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"/>
+
+        <Button
+            android:id="@+id/bindInviteCode"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:text="提交邀请码(先绑定)"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"/>
+
+        <Button
+            android:id="@+id/getFirendList"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:text="获取我的好友邀请列表(先绑定)"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee"/>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
